@@ -12,7 +12,7 @@ import java.util.Random;
  */
 public class User {
 
-    private String id;
+    private String id; // not being used as of now
     private String firstName;
     private String lastName;
     private SEX sexType;
@@ -26,7 +26,6 @@ public class User {
         this.setSexType(sexType);
         this.setAge(age);
         this.setRolesList(rolesList);
-        this.setId(String.valueOf(new Random().nextLong()));
     }
 
     public static Comparator<User> nameComparator = new Comparator<User>() {
